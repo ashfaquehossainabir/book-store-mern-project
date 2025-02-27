@@ -41,7 +41,7 @@ const EditBook = () => {
 
     setLoading(true)
 
-    axios.put(`https://book-store-mern-project-backend-ddvi.onrender.com/books/${id}`, data)
+    axios.put(`http://localhost:5555/books/${id}`, data)
           .then(() => {
             setLoading(false)
             navigate('/')
