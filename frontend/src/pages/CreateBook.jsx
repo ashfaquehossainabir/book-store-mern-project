@@ -23,7 +23,7 @@ const CreateBook = () => {
 
     setLoading(true)
 
-    axios.post('https://book-store-mern-project-backend-ddvi.onrender.com/books', data)
+    axios.post('http://localhost:5555/books', data)
           .then(() => {
             setLoading(false)
             navigate('/')
